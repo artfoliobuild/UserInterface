@@ -15,10 +15,16 @@
   color: white;
   font-family: 'Raleway', sans-serif;
 }
-.jumbo .fa-arrow-down {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 16px;
+@media (max-width: 500px) {
+  .jumbo {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+.jumbo #jubmo_down_arrow {
+  margin-left: 49%;
+  margin-top: 10%;
+  font-size: 24px;
 }
 .jumbo header {
   display: flex;
@@ -42,6 +48,15 @@
   margin-right: auto;
   margin-top: 20%;
 }
+@media (max-width: 500px) {
+  .jumbo section h1 {
+    margin-bottom: 30px;
+  }
+  .jumbo section p {
+    line-height: 1;
+    font-size: 20px;
+  }
+}
 .jumbo section h1 {
   font-size: 64px;
   margin-bottom: 60px;
@@ -62,6 +77,35 @@
 }
 .jumbo section a span {
   color: white;
+  display: block;
+}
+.jumbo .menu {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 0;
+  width: 200px;
+  height: 15vh;
+  background-color: white;
+  color: #2e3842;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.jumbo .menu ul li {
+  list-style-type: none;
+  font-size: 16px;
+  padding: 5px 5px;
+  text-align: center;
+}
+.jumbo .menu ul li a {
+  text-decoration: none;
+  color: #2e3842;
+}
+.jumbo .menu ul li a:hover {
+  color: #ed4933;
+}
+.jumbo .menu--open {
   display: block;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
