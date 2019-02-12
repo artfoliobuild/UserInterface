@@ -36,14 +36,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 200px;
+  height: 300px;
   width: 25%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20%;
 }
 .jumbo section h1 {
-  font-size: 48px;
+  font-size: 64px;
+  margi-bottom: 80px;
+}
+.jumbo section p {
+  line-height: 2;
+  font-size: 16px;
 }
 .jumbo section a {
   width: 200px;
