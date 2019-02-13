@@ -1,0 +1,130 @@
+// styles for header
+
+.jumbo {
+    width: 100vw;
+    height: 100vh;
+    background: #2e3842; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+    @media (max-width: 500px) {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #jubmo_down_arrow {
+        margin-left: 49%;
+        margin-top: 10%;
+        font-size: 24px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 1%;
+        padding-top: 1%;
+        font-size: 16px;
+
+        h2 {
+            margin-right: 2%;
+        }
+
+       
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+
+        @media (max-width: 500px) {
+            h1 {
+                margin-bottom: 30px;
+            }
+           p {
+               line-height: 1;
+               font-size: 20px;
+           }
+        }
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 60px;
+
+
+        }
+
+    
+
+        p {
+            line-height: 2;
+            font-size: 16px;
+
+        }
+         a {
+            width: 200px;
+            height: 60px;
+            background-color: #ed4933;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a span {
+            color: white;
+            display: block;
+        }
+
+       
+
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 40px;
+        right: 0;
+        width: 200px;
+        height: 15vh; 
+        background-color: white;
+        color: #2e3842;
+        border-left: none;
+        border-bottom: none;
+        z-index: 2; 
+      }
+      
+      .menu ul li{
+        list-style-type: none;
+        font-size: 16px;
+        padding: 5px 5px;
+        text-align: center;
+      }
+
+      .menu ul li a{
+          text-decoration: none;
+          color: #2e3842;
+      }
+
+      .menu ul li a:hover{
+        color: #ed4933;
+    }
+      
+      .menu--open {
+        display: block;
+      }
+
+   
+}

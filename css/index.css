@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+.jumbo {
+  width: 100vw;
+  height: 100vh;
+  background: #2e3842;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 500px) {
+  .jumbo {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+.jumbo #jubmo_down_arrow {
+  margin-left: 49%;
+  margin-top: 10%;
+  font-size: 24px;
+}
+.jumbo header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 1%;
+  padding-top: 1%;
+  font-size: 16px;
+}
+.jumbo header h2 {
+  margin-right: 2%;
+}
+.jumbo section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+@media (max-width: 500px) {
+  .jumbo section h1 {
+    margin-bottom: 30px;
+  }
+  .jumbo section p {
+    line-height: 1;
+    font-size: 20px;
+  }
+}
+.jumbo section h1 {
+  font-size: 64px;
+  margin-bottom: 60px;
+}
+.jumbo section p {
+  line-height: 2;
+  font-size: 16px;
+}
+.jumbo section a {
+  width: 200px;
+  height: 60px;
+  background-color: #ed4933;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jumbo section a span {
+  color: white;
+  display: block;
+}
+.jumbo .menu {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 0;
+  width: 200px;
+  height: 15vh;
+  background-color: white;
+  color: #2e3842;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.jumbo .menu ul li {
+  list-style-type: none;
+  font-size: 16px;
+  padding: 5px 5px;
+  text-align: center;
+}
+.jumbo .menu ul li a {
+  text-decoration: none;
+  color: #2e3842;
+}
+.jumbo .menu ul li a:hover {
+  color: #ed4933;
+}
+.jumbo .menu--open {
+  display: block;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
