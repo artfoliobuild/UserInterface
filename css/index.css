@@ -8,18 +8,27 @@
   width: 100%;
   height: 100vh;
   max-width: 1920px;
-  background: #2e3842;
+  background: url('../img/mountain.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: white;
   font-family: 'Raleway', sans-serif;
+  animation: fadein 2s;
 }
 @media (max-width: 500px) {
   .jumbo {
     width: 100vw;
     height: 50vh;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .jumbo #jubmo_down_arrow {

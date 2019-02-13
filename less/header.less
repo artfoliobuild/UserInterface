@@ -4,17 +4,24 @@
     width: 100%;
     height: 100vh;
     max-width: 1920px;
-    background: @dark-bg; 
+    background: url('../img/mountain.jpg') no-repeat center center fixed;
+    //background: @dark-bg; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: white;
     font-family: @font-family;
+    animation: fadein 2s;
 
     @media (max-width: 500px) {
         width: 100vw;
         height: 50vh;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
     }
 
     #jubmo_down_arrow {
