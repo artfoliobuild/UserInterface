@@ -120,7 +120,7 @@
   font-family: 'Raleway', sans-serif;
 }
 .about-us section {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   border: 0;
@@ -137,17 +137,18 @@
 .about-us section .img-container img {
   height: 100%;
   width: 100%;
-  border: 2px solid black;
 }
 .about-us section .text-container {
   width: 60%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   padding-left: 50px;
   padding: 0 40px;
   font-family: 'Raleway', sans-serif;
+  background-color: #2e3842;
+  color: white;
 }
 .about-us section .text-container h2 {
   font-size: 2.2em;
@@ -159,20 +160,32 @@
   font-size: 2em;
   color: #ed4933;
 }
-.about-us section .text-container p {
-  margin: 15px 0;
+.about-us section .text-container .blurb-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about-us section .text-container .blurb-container p {
   line-height: 2;
-  font-size: 1.65em;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-us section .text-container .link-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #2e3842;
   color: white;
   justify-content: space-around;
 }
 .about-us section .text-container .link-container a {
   color: white;
+}
+.about-us section .text-container .link-container a > i {
+  font-size: 1.2rem;
 }
 .about-us .section-selected {
   display: flex;
