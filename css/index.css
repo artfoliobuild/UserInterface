@@ -130,17 +130,16 @@
   margin: 40px 0;
 }
 .about-us section .img-container {
-  width: 25%;
+  width: 40%;
   height: 100%;
 }
 .about-us section .img-container img {
-  height: 100px;
+  height: 100%;
   width: 100%;
   border: 2px solid black;
-  border-radius: 50%;
 }
 .about-us section .text-container {
-  width: 75%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -188,19 +187,27 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-.about-us-tabs span {
+.about-us-tabs div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.about-us-tabs div span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 25%;
-  height: 80px;
+  height: 40px;
   font-size: 1.2rem;
   color: white;
   background-color: #2e3842;
   padding: 10px;
 }
 .about-us-tab-selected {
-  background-color: white !important;
-  font-weight: bold;
-  color: #2e3842 !important;
-  border: 1px solid #ed4933;
+  background-color: #ed4933 !important;
+  color: white !important;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
