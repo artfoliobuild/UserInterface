@@ -157,15 +157,17 @@
   font-family: 'Raleway', sans-serif;
 }
 .about-us section .text-container h3 {
-  font-size: 2em;
+  font-size: 1rem;
   color: #ed4933;
 }
 .about-us section .text-container .blurb-container {
   display: flex;
+  width: 60%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 .about-us section .text-container .blurb-container p {
   line-height: 2;
