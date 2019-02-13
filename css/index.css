@@ -193,6 +193,12 @@
   background-color: #2e3842;
   padding: 10px;
 }
+.about-us-tabs span:hover {
+  background-color: white;
+  font-weight: bold;
+  color: #2e3842;
+  border: 1px solid #ed4933;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
