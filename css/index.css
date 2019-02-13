@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
   padding-right: 1%;
   padding-top: 1%;
   font-size: 1.6rem;
@@ -157,35 +158,6 @@
     opacity: 1;
   }
 }
-.jumbo .menu {
-  display: none;
-  position: fixed;
-  top: 40px;
-  right: 0;
-  width: 200px;
-  height: 15vh;
-  background-color: white;
-  color: #2e3842;
-  border-left: none;
-  border-bottom: none;
-  z-index: 2;
-}
-.jumbo .menu ul li {
-  list-style-type: none;
-  font-size: 1.6rem;
-  padding: 5px 5px;
-  text-align: center;
-}
-.jumbo .menu ul li a {
-  text-decoration: none;
-  color: #2e3842;
-}
-.jumbo .menu ul li a:hover {
-  color: #ed4933;
-}
-.jumbo .menu--open {
-  display: block;
-}
 .about-us {
   width: 50%;
   max-width: 100vw;
@@ -305,6 +277,47 @@
 .about-us-tab-selected {
   background-color: #ed4933 !important;
   color: white !important;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  height: 15%;
+  background-color: white;
+  color: #2e3842;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.menu ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 1.6rem;
+  padding: 5px;
+  text-align: center;
+  padding: 2px;
+  margin: 5px 0;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #2e3842;
+  text-align: center;
+}
+.menu ul li a:hover {
+  color: #ed4933;
+}
+.menu--open {
+  display: block;
+  height: 20vh;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

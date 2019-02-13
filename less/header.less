@@ -30,6 +30,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        position: relative;
         padding-right: 1%;
         padding-top: 1%;
         font-size: 1.6rem;
@@ -150,39 +151,7 @@
         to   { opacity: 1; }
     }
 
-    .menu {
-        display: none;
-        position: fixed;
-        top: 40px;
-        right: 0;
-        width: 200px;
-        height: 15vh; 
-        background-color: white;
-        color: @dark-bg;
-        border-left: none;
-        border-bottom: none;
-        z-index: 2; 
-      }
-      
-      .menu ul li{
-        list-style-type: none;
-        font-size: 1.6rem;
-        padding: 5px 5px;
-        text-align: center;
-      }
-
-      .menu ul li a{
-          text-decoration: none;
-          color: @dark-bg;
-      }
-
-      .menu ul li a:hover{
-        color: @highlight;
-    }
-      
-      .menu--open {
-        display: block;
-      }
+    
 
    
 }
