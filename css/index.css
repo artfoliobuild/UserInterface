@@ -22,8 +22,14 @@
 }
 @media (max-width: 500px) {
   .jumbo {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
+  }
+}
+@media (max-width: 780px) {
+  .jumbo {
+    width: 100%;
+    height: 100vh;
   }
 }
 .jumbo #jubmo_down_arrow {
@@ -34,6 +40,11 @@
   left: 0;
   bottom: 0;
   animation: MoveUpDown 2s linear infinite;
+}
+@media (max-width: 500px) {
+  .jumbo #jubmo_down_arrow {
+    display: none;
+  }
 }
 @keyframes MoveUpDown {
   0%,
@@ -73,7 +84,7 @@
   }
   .jumbo section p {
     line-height: 1;
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 .jumbo section h1 {
@@ -106,8 +117,8 @@
 }
 .jumbo section a {
   width: 200px;
-  height: 100px;
-  font-size: 1.2rem;
+  height: 40px;
+  font-size: 1.6rem;
   background-color: #ed4933;
   border-radius: 5%;
   display: flex;
@@ -127,7 +138,10 @@
 .jumbo section a span {
   text-align: center;
   color: white;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -180,6 +194,11 @@
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
 }
+@media (max-width: 500px) {
+  .about-us {
+    width: 100%;
+  }
+}
 .about-us section {
   width: 100%;
   margin: 0 auto;
@@ -212,13 +231,12 @@
   color: white;
 }
 .about-us section .text-container h2 {
-  font-size: 2.2em;
-  font-weight: bold;
+  font-size: 2.2rem;
   margin-bottom: 5px;
   font-family: 'Raleway', sans-serif;
 }
 .about-us section .text-container h3 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #ed4933;
 }
 .about-us section .text-container .blurb-container {
@@ -232,10 +250,20 @@
 }
 .about-us section .text-container .blurb-container p {
   line-height: 2;
-  font-size: 1rem;
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .about-us section .text-container .blurb-container {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  .about-us section .text-container .blurb-container {
+    display: none;
+  }
 }
 .about-us section .text-container .link-container {
   display: flex;
@@ -248,7 +276,7 @@
   color: white;
 }
 .about-us section .text-container .link-container a > i {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .about-us .section-selected {
   display: flex;
@@ -264,9 +292,13 @@
   text-align: center;
   color: #2e3842;
 }
+@media (max-width: 500px) {
+  .about-us-tabs {
+    width: 100%;
+  }
+}
 .about-us-tabs h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 .about-us-tabs div {
@@ -282,7 +314,7 @@
   justify-content: center;
   width: 25%;
   height: 40px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: white;
   background-color: #2e3842;
   padding: 10px;
@@ -331,6 +363,53 @@
 .menu--open {
   display: block;
   height: 20vh;
+}
+.contact {
+  font-family: 'Raleway', sans-serif;
+  height: 50vh;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #2e3842;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 100%;
+  }
+}
+.contact .header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.contact .header h2 {
+  font-size: 3rem;
+}
+.contact .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.contact .body form label {
+  font-size: 1.6rem;
+  color: white;
+}
+.contact .body form input {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -463,8 +542,10 @@ table {
 a {
   text-decoration: none;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   max-width: 100vw;
   width: 100%;
-  font-size: 62.5%;
 }
