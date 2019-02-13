@@ -42,12 +42,14 @@ class AboutTab {
   // set display to none for each node in about_us_sections
   about_us_sections.forEach(node => (node.style.display = "none"));
   
-  // set the first node to display flex
-  about_us_sections[0].style.display = "flex";
+
   
   // grab about us tabs from the DOM
   const about_us_tabs = document.querySelectorAll(".about-us-tab");
   
   // create new instances of AboutTab from nodelist about_us_tabs
   const about_tabs = Array.from(about_us_tabs).map(node => new AboutTab(node));
+
+  // set the first node to display flex
+  about_tabs[0].select();
   
