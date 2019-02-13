@@ -117,7 +117,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
 }
 .about-us section {
   width: 80%;
@@ -147,13 +147,13 @@
   justify-content: space-around;
   padding-left: 50px;
   padding: 0 40px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
 }
 .about-us section .text-container h2 {
   font-size: 2.2em;
   font-weight: bold;
   margin-bottom: 5px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
 }
 .about-us section .text-container h3 {
   font-size: 2em;
