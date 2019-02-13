@@ -12,7 +12,7 @@
         padding: 0;
         border: 0;
         height: 240px;
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         margin: 40px 0;
@@ -72,6 +72,10 @@
 
     }
 
+    .section-selected {
+        display: flex;
+    }
+
 }
 
 .about-us-tabs {
@@ -98,11 +102,12 @@
         padding: 10px;
     }
 
-    span:hover {
-        background-color: white;
-        font-weight: bold;
-        color: #2e3842;
-        border: 1px solid #ed4933;
-        
-    }
+    
+}
+
+.about-us-tab-selected {
+    background-color: white;
+    font-weight: bold;
+    color: #2e3842;
+    border: 1px solid #ed4933;
 }
