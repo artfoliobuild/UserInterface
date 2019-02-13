@@ -119,14 +119,14 @@
   margin: 0 auto;
 }
 .about-us section {
-  width: 50%;
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
   padding: 0;
   border: 0;
-  height: 240px;
+  height: 200px;
   display: none;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 40px 0;
 }
 .about-us section .img-container {
@@ -197,9 +197,9 @@
   padding: 10px;
 }
 .about-us-tab-selected {
-  background-color: white;
+  background-color: white !important;
   font-weight: bold;
-  color: #2e3842;
+  color: #2e3842 !important;
   border: 1px solid #ed4933;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
