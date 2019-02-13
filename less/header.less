@@ -24,7 +24,22 @@
         margin-left: 49%;
         margin-top: 10%;
         font-size: 2.0rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        animation: MoveUpDown 2s linear infinite;
     }
+
+    @keyframes MoveUpDown {
+        0%, 100% {
+          bottom: 0;
+        }
+        50% {
+          bottom: 10px;
+        }
+      }
+      
+      
 
     header {
         display: flex;
