@@ -555,7 +555,7 @@
   top: 0;
   right: 0;
   width: 200px;
-  height: 15%;
+  height: 20%;
   background-color: white;
   color: #2e3842;
   border-left: none;
@@ -620,7 +620,7 @@
 }
 .menu--open {
   display: block;
-  height: 20vh;
+  height: 25vh;
 }
 .contact {
   font-family: 'Raleway', sans-serif;
