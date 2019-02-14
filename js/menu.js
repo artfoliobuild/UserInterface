@@ -12,3 +12,7 @@ const toggleMenu = () => {
   
   // Using your menuButton reference, add a click handler that calls toggleMenu
   menuButton.addEventListener('click', toggleMenu);
+
+  // grab span to close menu
+  const close_button = document.querySelector('ul>span');
+  close_button.addEventListener('click', toggleMenu);
