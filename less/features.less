@@ -1,0 +1,58 @@
+.features {
+    width: 50%;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: @font-family;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    .articles {
+        margin-top: 40px;
+        width: 100%;
+
+        article {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 200px;
+    
+    
+            .img-container {
+                width: 40%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+    
+            }
+    
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60%;
+                height: 100%;
+                font-family: @font-family;
+    
+                h2 {
+                    font-size: 2.4rem;
+                    margin-bottom: 40px;
+                }
+    
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    
+}
