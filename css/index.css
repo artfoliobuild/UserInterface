@@ -27,7 +27,7 @@
     margin: 0 auto;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .jumbo {
     width: 100%;
     height: 100vh;
@@ -197,6 +197,123 @@
     opacity: 1;
   }
 }
+.features {
+  width: 50%;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .features {
+    width: 100%;
+  }
+}
+.features h2 {
+  font-size: 3.8rem;
+  margin-bottom: 10px;
+}
+.features p {
+  font-size: 1.6rem;
+}
+.features .articles {
+  margin-top: 40px;
+  width: 100%;
+  height: 70vh;
+  background-color: #2e3842;
+  color: white;
+}
+.features .articles article {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 33%;
+}
+.features .articles article .img-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #ed4933;
+  border-bottom: 2px solid #ed4933;
+}
+@media (max-width: 800px) {
+  .features .articles article .img-container {
+    display: none;
+  }
+}
+.features .articles article .img-container i {
+  font-size: 6rem;
+}
+.features .articles article .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 2px solid #ed4933;
+}
+@media (max-width: 800px) {
+  .features .articles article .text-container {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .features .articles article .text-container h2 {
+    margin-bottom: 10px;
+  }
+  .features .articles article .text-container p {
+    padding: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+  }
+}
+.features .articles article .text-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+@media (max-width: 800px) {
+  .features .articles article .text-container h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
+.features .articles article .text-container p {
+  font-size: 1.6rem;
+}
+@media (max-width: 800px) {
+  .features .articles article .text-container p {
+    margin-top: 15px;
+    font-size: 1.4rem;
+  }
+}
+.features #upload {
+  flex-direction: row-reverse;
+}
+.features #upload .img-container {
+  border-left: 2px solid #ed4933;
+}
+.features #posts {
+  border-bottom: 0 !important;
+}
+.features #posts .text-container {
+  border-bottom: 0 !important;
+}
+.features #posts .img-container {
+  border-bottom: 0 !important;
+}
 .about-us {
   width: 50%;
   max-width: 100vw;
@@ -232,6 +349,11 @@
     width: 70%;
   }
 }
+@media (max-width: 800px) {
+  .about-us section .img-container {
+    width: 70%;
+  }
+}
 .about-us section .img-container img {
   height: 100%;
   width: 100%;
@@ -242,8 +364,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-left: 50px;
-  padding: 0 40px;
   font-family: 'Raleway', sans-serif;
   background-color: #2e3842;
   color: white;
@@ -251,6 +371,15 @@
 @media (max-width: 500px) {
   .about-us section .text-container {
     width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .about-us section .text-container {
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 }
 .about-us section .text-container h2 {
@@ -269,7 +398,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
 }
 .about-us section .text-container .blurb-container p {
   line-height: 1;
@@ -283,7 +412,7 @@
     display: none;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .about-us section .text-container .blurb-container {
     display: none;
   }
@@ -295,6 +424,12 @@
   color: white;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .about-us section .text-container .link-container {
+    padding-top: 20px;
+    align-items: space-between;
+  }
+}
 .about-us section .text-container .link-container a {
   color: white;
 }
@@ -303,17 +438,67 @@
 }
 .about-us section .text-container .link-container .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: flex-end;
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media (max-width: 800px) {
+  .about-us section .text-container .link-container .row {
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.about-us section .text-container .link-container .row p {
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .about-us section .text-container .link-container .row p {
+    display: none;
+  }
+}
+@media (min-width: 801px) {
+  .about-us section .text-container .link-container .row p {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .about-us section .text-container .link-container .row p {
+    display: flex;
+  }
+}
+.about-us section .text-container .link-container .row i {
+  font-size: 3rem;
+}
+@media (max-width: 800px) {
+  .about-us section .text-container .link-container .row i {
+    font-size: 4rem;
+    text-align: center;
+  }
 }
 .about-us section .text-container .link-container h2 {
   font-size: 2.4rem;
 }
+@media (max-width: 800px) {
+  .about-us section .text-container .link-container h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+}
 .about-us section .text-container .link-container h3 {
   font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .about-us section .text-container .link-container h3 {
+    margin-bottom: 80px;
+    font-size: 1.6rem;
+  }
 }
 .about-us .section-selected {
   display: flex;
@@ -325,7 +510,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   color: #2e3842;
 }
@@ -336,7 +521,7 @@
   }
 }
 .about-us-tabs h2 {
-  font-size: 3rem;
+  font-size: 3.8rem;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: white !important;
@@ -370,13 +555,14 @@
   top: 0;
   right: 0;
   width: 200px;
-  height: 15%;
+  height: 20%;
   background-color: white;
   color: #2e3842;
   border-left: none;
+  border: 0.5px solid black;
   border-bottom: none;
   border-radius: 5%;
-  z-index: 2;
+  z-index: 3;
 }
 .menu span {
   color: black;
@@ -386,6 +572,12 @@
     width: 100px;
     height: 180px !important;
     text-align: right;
+  }
+}
+@media (max-width: 800px) {
+  .menu {
+    width: 94px;
+    height: 180px !important;
   }
 }
 .menu ul {
@@ -428,11 +620,11 @@
 }
 .menu--open {
   display: block;
-  height: 20vh;
+  height: 25vh;
 }
 .contact {
   font-family: 'Raleway', sans-serif;
-  height: 90vh;
+  height: 95vh;
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -463,26 +655,40 @@
   align-items: center;
 }
 .contact .body form {
+  font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: space-around;
   padding-top: 10%;
+  width: 90%;
 }
 .contact .body form label {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   color: white;
   margin-bottom: 5px;
+}
+@media (max-width: 800px) {
+  .contact .body form label {
+    font-size: 1.6rem;
+  }
 }
 .contact .body form input,
 .contact .body form textarea,
 .contact .body form button {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .contact .body form input,
+  .contact .body form textarea,
+  .contact .body form button {
+    font-size: 1.6rem;
+  }
 }
 .contact .body form button {
   height: 40px;
-  width: 200px;
+  width: 50% !important;
 }
 footer {
   font-family: 'Raleway', sans-serif;
@@ -490,19 +696,15 @@ footer {
   font-weight: bold;
   color: #2e3842;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   text-align: center;
-  height: 10vh;
+  height: 5vh;
 }
 footer p {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  font-size: 1.6rem;
+  margin-top: 2.5vh;
+  font-size: 2rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -642,4 +844,7 @@ body {
   max-width: 100vw;
   width: 100%;
   background-color: white;
+}
+.wrapper {
+  min-width: 375px;
 }
