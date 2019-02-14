@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
    <head>
       <title>Artfolio - Home</title>
       <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/index.css" />
@@ -13,21 +13,6 @@
       <div id="page-wrapper">
          <!--Header-->
          <div class="jumbo">
-            <header>
-               <h2>MENU</h2>
-               <i class="fas fa-bars"></i>
-            </header>
-            <div class="menu">
-               
-               <ul>
-                     <span>x</span>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#features">Features</a></li>
-                  <li><a href="#about">About Us</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="#">Sign Up</a></li>
-               </ul>
-            </div>
             <section>
                <h1>Artfolio</h1>
                <p>A beautiful collection of<br>
@@ -35,7 +20,7 @@
                </p>
                <a href="https://affectionate-keller-a26ece.netlify.com/" class="pulse"><span>View the Collection</span></a>
             </section>
-            <a href="#about"><i id="jubmo_down_arrow" class="fas fa-arrow-down"></i></a>
+            
          </div>
          <!--jumbo end-->
          <div class="features">
@@ -75,7 +60,8 @@
             
          </div>
          <!-- About Us -->
-         <section class="about-us-tabs">
+         <div class="about">
+            <section class="about-us-tabs">
             <a name="about"></a>
             <h2>About Us</h2>
             <div>
@@ -89,7 +75,7 @@
             <section class="about-us-sections" data-role="sc">
                <!-- One -->
                <div class="img-container">
-                  <img src="./img/jeffrey.jpg">
+                  <img src="./img/jeffrey.jpg" alt="Photo of Jeffrey">
                </div>
                <!--img-container end-->
                <div class="text-container">
@@ -105,7 +91,7 @@
                         <p>Email</p>
                      </div>
                      <div class="row">
-                        <a href="https://www.linkedin.com/in/jeffrey-kang-4937b117a/"target="_blank"><i class="fa fa-linkedin-square fa-6x"></i></a>
+                        <a href="https://www.linkedin.com/in/jeffrey-kang-4937b117a/" target="_blank"><i class="fa fa-linkedin-square fa-6x"></i></a>
                         <p>LinkedIn</p>
                      </div>
                      <div class="row">
@@ -120,7 +106,7 @@
             <section class="about-us-sections" data-role="fe">
                <!-- Two -->
                <div class="img-container">
-                  <img src="./img/joshua.jpg">
+                  <img src="./img/joshua.jpg" alt="Photo of Joshua">
                </div>
                <!--img-container end-->
                <div class="text-container">
@@ -151,7 +137,7 @@
             <section class="about-us-sections" data-role="be">
                <!-- Three -->
                <div class="img-container">
-                  <img src="./img/jorge.jpg">
+                  <img src="./img/jorge.jpg" alt="Photo of Jorge">
                </div>
                <!--img-container end-->
                <div class="text-container">
@@ -181,7 +167,7 @@
             <section class="about-us-sections" data-role="ui">
                <!-- Four -->
                <div class="img-container">
-                  <img src="./img/louis.jpg">
+                  <img src="./img/louis.jpg" alt="Photo of Louis">
                </div>
                <!--img-container end-->
                <div class="text-container">
@@ -211,6 +197,8 @@
             </section>
          </div>
          <!--about us end-->
+         </div>
+         
 
          <div class="contact">
             <a name="contact"></a>
@@ -240,8 +228,14 @@
                </form>  
             </div>
             </div>
-            <footer>
-               <p>&copy;2019 Team Jeff</p>
+            <footer id="footer">
+                <nav>
+                  <a href="index.html">Home</a>
+                  <a href="#features">Features</a>
+                  <a href="#about">About Us</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#">Sign Up</a>
+               </nav>
             </footer>
       </div>
       <!-- Page Wrapper End-->

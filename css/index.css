@@ -7,6 +7,8 @@
 .jumbo {
   width: 100%;
   height: 100vh;
+  margin: 0;
+  padding: 0;
   max-width: 1920px;
   background: url('../img/mountain.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -37,43 +39,6 @@
   text-decoration: none;
   color: white;
 }
-.jumbo #jubmo_down_arrow {
-  margin-left: 49%;
-  margin-top: 10%;
-  font-size: 2rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  text-decoration: none;
-  animation: MoveUpDown 2s linear infinite;
-}
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 10px;
-  }
-}
-.jumbo header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: relative;
-  padding-right: 3%;
-  padding-top: 3%;
-  font-size: 1.6rem;
-}
-@media (max-width: 500px) {
-  .jumbo header {
-    padding-right: 5%;
-    padding-top: 5%;
-  }
-}
-.jumbo header h2 {
-  margin-right: 2%;
-}
 .jumbo section {
   display: flex;
   flex-direction: column;
@@ -83,7 +48,7 @@
   width: 25%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  padding-top: 20%;
 }
 @media (max-width: 500px) {
   .jumbo section h1 {
@@ -202,7 +167,7 @@
   max-width: 100vw;
   height: 100vh;
   max-height: 100vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
@@ -313,6 +278,9 @@
 }
 .features #posts .img-container {
   border-bottom: 0 !important;
+}
+.about {
+  display: none;
 }
 .about-us {
   width: 50%;
@@ -627,7 +595,7 @@
   height: 95vh;
   width: 50%;
   margin: 0 auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #2e3842;
 }
@@ -690,21 +658,37 @@
   height: 40px;
   width: 50% !important;
 }
-footer {
+#footer {
   font-family: 'Raleway', sans-serif;
-  background-color: white;
+  background-color: black;
   font-weight: bold;
   color: #2e3842;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
   text-align: center;
   height: 5vh;
+  margin-top: -5vh;
+  z-index: 2;
+  opacity: 0.75;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15%;
 }
-footer p {
-  margin-top: 2.5vh;
-  font-size: 2rem;
+#footer nav {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  opacity: 1;
+  width: 100%;
+}
+#footer nav a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4rem;
+  color: white;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
