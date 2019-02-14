@@ -8,9 +8,10 @@
     background-color: white;
     color: @dark-bg;
     border-left: none;
+    border: .5px solid black;
     border-bottom: none;
     border-radius: 5%;
-    z-index: 2; 
+    z-index: 3; 
 
     span {
         color: black;
@@ -20,6 +21,11 @@
         width: 100px;
         height:  180px !important;
         text-align: right;
+    }
+
+    @media (max-width: 800px) {
+        width: 94px;
+        height: 180px !important;
     }
 
     ul {

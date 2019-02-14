@@ -1,6 +1,6 @@
 .contact {
     font-family: @font-family;
-    height: 90vh;
+    height: 95vh;
     width: 50%;
     margin: 0 auto;
 
@@ -42,22 +42,29 @@
             justify-content: space-around;
             align-items: space-around;
             padding-top: 10%;
+            width: 90%;
             
           
 
             label {
-                font-size: 1.6rem;
+                font-size: 2.2rem;
                 color: white;
                 margin-bottom: 5px;
+                @media (max-width:800px) {
+                    font-size: 1.6rem;
+                }
             }
             input, textarea, button {
-                font-size: 1.6rem;
+                font-size: 2.2rem;
                 margin-bottom: 30px;
+                @media (max-width:800px) {
+                    font-size: 1.6rem;
+                }
             }
 
             button {
                 height: 40px;
-                width: 200px;
+                width: 50% !important;
             }
 
             
