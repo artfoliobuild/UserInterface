@@ -12,25 +12,43 @@
     margin-bottom: 40px;
     h2 {
         font-size: 3.8rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.6rem;
     }
 
     .articles {
         margin-top: 40px;
         width: 100%;
+        height: 70vh;
+        background-color: @dark-bg;
+        color: white;
+        
+        
 
         article {
             display: flex;
             flex-direction: row;
             width: 100%;
-            height: 200px;
+            height: 33%;
     
     
             .img-container {
                 width: 40%;
                 height: 100%;
-                img {
-                    height: 100%;
-                    width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-right: 2px solid @highlight;
+                border-bottom: 2px solid @highlight;
+                @media (max-width: 800px) {
+                    display: none;
+                }
+                i {
+                    font-size: 6rem;
                 }
     
             }
@@ -38,21 +56,81 @@
             .text-container {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 width: 60%;
                 height: 100%;
                 font-family: @font-family;
+                border-bottom: 2px solid @highlight;
+
+                @media (max-width: 800px) {
+                    width: 100%;
+                    align-items: center;
+                    justify-content: flex-start;
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        padding: 10%;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        font-size: 1.2rem;
+                    }
+                }
     
                 h2 {
                     font-size: 2.4rem;
                     margin-bottom: 40px;
+                    @media (max-width: 800px) {
+                        font-size: 1.8rem;
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                    }
                 }
     
                 p {
                     font-size: 1.6rem;
+                    @media (max-width: 800px) {
+                        margin-top: 15px;
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
+
+       
     }
+
+    #upload {
+        flex-direction: row-reverse;
+        .img-container {
+            border-left: 2px solid @highlight;
+           
+
+            
+        }
+
+       
+        
+    }
+
+    #posts {
+        .text-container {
+
+            border-bottom: 0 !important;
+        }
+
+        .img-container {
+    
+  
+            border-bottom: 0 !important;
+
+            
+        }
+        border-bottom: 0 !important;
+    }
+
+
+    
     
 }

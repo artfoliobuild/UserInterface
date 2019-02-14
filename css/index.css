@@ -212,39 +212,102 @@
 }
 .features h2 {
   font-size: 3.8rem;
+  margin-bottom: 10px;
+}
+.features p {
+  font-size: 1.6rem;
 }
 .features .articles {
   margin-top: 40px;
   width: 100%;
+  height: 70vh;
+  background-color: #2e3842;
+  color: white;
 }
 .features .articles article {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 200px;
+  height: 33%;
 }
 .features .articles article .img-container {
   width: 40%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #ed4933;
+  border-bottom: 2px solid #ed4933;
 }
-.features .articles article .img-container img {
-  height: 100%;
-  width: 100%;
+@media (max-width: 800px) {
+  .features .articles article .img-container {
+    display: none;
+  }
+}
+.features .articles article .img-container i {
+  font-size: 6rem;
 }
 .features .articles article .text-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 60%;
   height: 100%;
   font-family: 'Raleway', sans-serif;
+  border-bottom: 2px solid #ed4933;
+}
+@media (max-width: 800px) {
+  .features .articles article .text-container {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .features .articles article .text-container h2 {
+    margin-bottom: 10px;
+  }
+  .features .articles article .text-container p {
+    padding: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+  }
 }
 .features .articles article .text-container h2 {
   font-size: 2.4rem;
   margin-bottom: 40px;
 }
+@media (max-width: 800px) {
+  .features .articles article .text-container h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
 .features .articles article .text-container p {
   font-size: 1.6rem;
+}
+@media (max-width: 800px) {
+  .features .articles article .text-container p {
+    margin-top: 15px;
+    font-size: 1.4rem;
+  }
+}
+.features #upload {
+  flex-direction: row-reverse;
+}
+.features #upload .img-container {
+  border-left: 2px solid #ed4933;
+}
+.features #posts {
+  border-bottom: 0 !important;
+}
+.features #posts .text-container {
+  border-bottom: 0 !important;
+}
+.features #posts .img-container {
+  border-bottom: 0 !important;
 }
 .about-us {
   width: 50%;
@@ -442,7 +505,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   color: #2e3842;
 }
