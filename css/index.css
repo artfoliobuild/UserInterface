@@ -176,29 +176,50 @@
 @media (max-width: 500px) {
   .features {
     width: 100%;
-    margin-bottom: 40px;
+    max-width: 100vh;
   }
 }
-.features h2 {
-  font-size: 3.8rem;
-  margin-bottom: 10px;
-  margin-top: 40px;
+.features header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%;
 }
-.features p {
+.features header h2 {
+  font-size: 3.8rem;
+}
+.features header > p {
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .features header > p {
+    display: none;
+  }
+}
 .features .articles {
-  margin-top: 40px;
   width: 100%;
   height: 70vh;
   background-color: #2e3842;
   color: white;
+}
+@media (max-width: 500px) {
+  .features .articles {
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 .features .articles article {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 33%;
+}
+@media (max-width: 500px) {
+  .features .articles article {
+    height: 33%;
+  }
 }
 .features .articles article .img-container {
   width: 40%;
@@ -221,12 +242,15 @@
 .features .articles article .text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: space-around;
   width: 60%;
   height: 100%;
   font-family: 'Raleway', sans-serif;
   border-bottom: 2px solid #ed4933;
+}
+.features .articles article .text-container p {
+  font-size: 1.6rem;
 }
 @media (max-width: 800px) {
   .features .articles article .text-container {
@@ -283,22 +307,22 @@
   display: none;
   width: 50%;
   max-width: 100vw;
-  height: 100vh;
+  height: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
-  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .about {
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 }
 .about .about-us {
   width: 100%;
   display: flex;
+  height: 80vh;
   flex-direction: row;
   flex-wrap: wrap;
   font-family: 'Raleway', sans-serif;
@@ -306,7 +330,7 @@
 @media (max-width: 500px) {
   .about .about-us {
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
 }
 .about .about-us section {
@@ -320,18 +344,29 @@
   justify-content: center;
   margin: 40px 0;
 }
+@media (max-width: 500px) {
+  .about .about-us section {
+    margin: 0;
+    height: 65vh;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .about .about-us section .img-container {
   width: 40%;
   height: 100%;
 }
 @media (max-width: 500px) {
   .about .about-us section .img-container {
-    width: 70%;
+    width: 100%;
+    height: 50%;
+    margin: 0;
   }
 }
 @media (max-width: 800px) {
   .about .about-us section .img-container {
-    width: 70%;
+    width: 100%;
   }
 }
 .about .about-us section .img-container img {
@@ -350,16 +385,21 @@
 }
 @media (max-width: 500px) {
   .about .about-us section .text-container {
-    width: 30%;
+    width: 100vw !important;
+    height: 50% !important;
+    flex-direction: column-reverse;
+    align-items: space-between;
+    justify-content: center;
+    text-align: center;
   }
 }
 @media (max-width: 800px) {
   .about .about-us section .text-container {
-    width: 30%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    width: 100vw;
+    height: 100%;
+    flex-direction: column-reverse;
+    align-items: space-between;
+    text-align: space-between;
   }
 }
 .about .about-us section .text-container h2 {
@@ -387,17 +427,36 @@
   line-height: 2;
   font-size: 1.6rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 @media (max-width: 500px) {
+  .about .about-us section .text-container .blurb-container p {
+    line-height: 1;
+    font-size: 1.4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
   .about .about-us section .text-container .blurb-container {
-    display: none;
+    line-height: 1;
+    font-size: 1rem;
+    text-align: center;
+    align-items: flex-start;
+    max-width: 100vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    height: 70%;
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
   .about .about-us section .text-container .blurb-container {
-    display: none;
+    line-height: 1;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 .about .about-us section .text-container .link-container {
@@ -411,6 +470,25 @@
   .about .about-us section .text-container .link-container {
     padding-top: 20px;
     align-items: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-us section .text-container .link-container {
+    padding-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+    height: 30%;
+  }
+  .about .about-us section .text-container .link-container h2 {
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .about .about-us section .text-container .link-container h3 {
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 .about .about-us section .text-container .link-container a {
@@ -432,6 +510,16 @@
 }
 @media (max-width: 800px) {
   .about .about-us section .text-container .link-container .row {
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-us section .text-container .link-container .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
@@ -461,7 +549,7 @@
 }
 @media (max-width: 800px) {
   .about .about-us section .text-container .link-container .row i {
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
   }
 }
@@ -472,6 +560,17 @@
   .about .about-us section .text-container .link-container h2 {
     margin-bottom: 10px;
     font-size: 2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-us section .text-container .link-container h2 {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 .about .about-us section .text-container .link-container h3 {
@@ -481,6 +580,14 @@
   .about .about-us section .text-container .link-container h3 {
     margin-bottom: 20px;
     font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-us section .text-container .link-container h3 {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    text-align: center;
   }
 }
 .about .about-us .section-selected {
@@ -489,11 +596,11 @@
 .about .about-us-tabs {
   width: 100%;
   max-width: 100vw;
+  height: 20vh;
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 40px;
   text-align: center;
   color: #2e3842;
 }
@@ -505,20 +612,20 @@
 }
 .about .about-us-tabs h2 {
   font-size: 3.8rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: white !important;
   height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .about .about-us-tabs h2 {
-    margin-top: 10px;
     margin-bottom: 0;
   }
 }
 @media (max-width: 800px) {
   .about .about-us-tabs h2 {
-    margin-top: 10px;
     margin-bottom: 0px;
   }
 }
@@ -647,9 +754,8 @@
   margin-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
   height: 100%;
   width: 100%;
 }
@@ -753,8 +859,12 @@
 }
 @media (max-width: 500px) {
   #footer nav a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
+}
+#footer nav a:hover {
+  background-color: #ed4933;
+  color: white;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
