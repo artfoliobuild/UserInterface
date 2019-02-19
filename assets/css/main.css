@@ -2074,7 +2074,9 @@ input, select, textarea {
 		.image img {
 			border-radius: 3px;
 			display: block;
-			max-height: 680px;
+			max-height: 500px;
+			width: 75%;
+			
 		}
 
 		.image.left {
@@ -3752,6 +3754,8 @@ input, select, textarea {
 }
 
 
+
+
 #two .about-us-tabs {
 	display: flex;
 	flex-direction: row;
@@ -3803,6 +3807,23 @@ input, select, textarea {
 	background-color: #ed4933;
 	color: white;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 736px) {
+
+	#two p {
+		display: none;
+	}
+
+	#two .about-us-tabs {
+		width: 100%;
+		margin: 0;
+	}
+
+	#two .major h2 {
+		width: 100%;
+	}
+
 }
 /* CTA */
 
