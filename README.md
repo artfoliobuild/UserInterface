@@ -6,6 +6,18 @@ View the live project at https://zealous-colden-61bae8.netlify.com/
 
 ## Team Members
 * Jeffrey Kang - SCRUM Master
+    *  <div class="row">
+                        <a href="mailto:jeffkang@gmail.com" ><i class="fa fa-envelope-square fa-6x"></i></a>
+                        <p>Email</p>
+                     </div>
+                     <div class="row">
+                        <a href="https://www.linkedin.com/in/jeffrey-kang-4937b117a/" target="_blank"><i class="fa fa-linkedin-square fa-6x"></i></a>
+                        <p>LinkedIn</p>
+                     </div>
+                     <div class="row">
+                        <a href="https://github.com/jeffyjkang" target="_blank"><i class="fa fa-github-square fa-6x"></i></a>
+                        <p>Github</p>
+                     </div>
 * Joshua Gonzalez - Front-End Engineer
 * Jorge Otos - Back-End Engineer
 * Louis Magdaleno - User Interface Developer
