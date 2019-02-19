@@ -6,23 +6,19 @@ View the live project at https://zealous-colden-61bae8.netlify.com/
 
 ## Team Members
 * Jeffrey Kang - SCRUM Master
-    *  <div class="row">
-                        <a href="mailto:jeffkang@gmail.com" ><i class="fa fa-envelope-square fa-6x"></i></a>
-                        <p>Email</p>
-                     </div>
-                     <div class="row">
-                        <a href="https://www.linkedin.com/in/jeffrey-kang-4937b117a/" target="_blank"><i class="fa fa-linkedin-square fa-6x"></i></a>
-                        <p>LinkedIn</p>
-                     </div>
-                     <div class="row">
-                        <a href="https://github.com/jeffyjkang" target="_blank"><i class="fa fa-github-square fa-6x"></i></a>
-                        <p>Github</p>
-                     </div>
-* Joshua Gonzalez - Front-End Engineer
-* Jorge Otos - Back-End Engineer
-* Louis Magdaleno - User Interface Developer
+    * <a href="https://github.com/jeffyjkang" target="_blank">Github</a>
 
-## **Your primary role User Interface Developer:**
+* Joshua Gonzalez - Front-End Engineer
+    * <a href="https://github.com/CatsAreMLG" target="_blank">Github</a>
+* Jorge Osto - Back-End Engineer
+    * <a href="https://github.com/Jorlost19" target="_blank">Github</a>
+* Louis Magdaleno - User Interface Developer
+    * <a href="https://github.com/louismagdaleno" target="_blank">Github</a>
+
+## Project Overview
+* <a href="https://www.notion.so/Part-Time-Build-Weeks-38860a0c39b641f483639b78a1e4094f">Part Time Build Weeks</a>
+
+## User Interface Developer Role Guide
 
 You will build a multi-page marketing website that matches the theme chosen by your group and provides the user with details about the product your team has selected to build. Your marketing website must include responsive mobile and desktop screen widths. The call to action on the website should be a login button that links the user over to the React application that your Front End Architect is building. Your marketing website must be hosted.
 
@@ -37,6 +33,33 @@ For this Marketing site's home page you need to have content and copy that relat
 3. Student's code is clean and organized, proper indentation is apparent, a library or framework was researched and used. 
     * Code is clean, well formatted, organized, and indented properly.  <a href="https://github.com/prettier/prettier">Prettier</a> was used to format JS and <a href="https://www.freeformatter.com/html-formatter.html">FreeFormatter</a> was used to format site markup.
 4. Tablet views look professional at 800px and above. Responsive units are used for font-sizing.
-    * 
+    * The site looks great at all resolutions. Breakpoints are handled through Javascript in `.assets/js/main.js`.
+        Line 12 :
+        `breakpoints({
+			xlarge:   [ '1281px',  '1680px' ],
+			large:    [ '981px',   '1280px' ],
+			medium:   [ '737px',   '980px'  ],
+			small:    [ '481px',   '736px'  ],
+			xsmall:   [ null,      '480px'  ]
+		});`
 5. Any of the following were used: .map(), .reduce(), .filter(), .sort(), constructors were used to build new objedects.
+    * In `./assets/js/about_us.js`, map is used to create new instances of an object. `Line 51 - const about_tabs = Array.from(about_us_tabs).map(node => new AboutTab(node));`
 6. A reusable component was built.  The component should be able to take any number of elements and continue to work well.  Example: Accordion with any amount of panels.
+    * A Tab Component was built and can be reused. The Tab Component features a select method which will select other elments on the page with the same data attribute as its own.
+## Project
+root
+|
+|----index.html
+|
+|----README.md
+|
+|----assets
+|       |
+|       |----css (styling shets)
+|       |
+|       |----fonts (fontawesome dependencies)
+|       |
+|       |----js (jquery and js)
+|
+|----images (various images used on the site)
+
