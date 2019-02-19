@@ -3815,9 +3815,17 @@ input, select, textarea {
 	}
 
 	#one {
-		background-color: black;
-		color: white;
+		background-color: white;
+		color: black !important;
 	}
+
+		#one h2 {
+			color: black;
+		}
+
+		#one p {
+			color: black;
+		}
 
 		#main > header h2 {
 			font-size: 1.75em;
