@@ -3741,6 +3741,7 @@ input, select, textarea {
 	margin: 0 auto;
 }
 
+
 #two .about-us-tabs {
 	display: flex;
 	flex-direction: row;
@@ -3762,11 +3763,34 @@ input, select, textarea {
 #two .about-us-tabs span:hover {
 	background-color: white;
 	color: black;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .about-us-tab-selected {
 	background-color: #ed4933;
 	color: white;
+}
+.row i {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+}
+.row a {
+	border-bottom: none;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: center;
+	font-size: 1.2em;
+
+}
+
+.row a:hover {
+	background-color: #ed4933;
+	color: white;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 /* CTA */
 
@@ -3934,6 +3958,12 @@ input, select, textarea {
 #contact h2, #contact button {
 	color: black;
 	margin: 0 auto;
+}
+
+#contact button:hover {
+	background-color: #ed4933;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	color: white;
 }
 
 
