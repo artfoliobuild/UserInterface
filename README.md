@@ -34,19 +34,23 @@ For this Marketing site's home page you need to have content and copy that relat
     * Code is clean, well formatted, organized, and indented properly.  <a href="https://github.com/prettier/prettier">Prettier</a> was used to format JS and <a href="https://www.freeformatter.com/html-formatter.html">FreeFormatter</a> was used to format site markup.
 4. Tablet views look professional at 800px and above. Responsive units are used for font-sizing.
     * The site looks great at all resolutions. Breakpoints are handled through Javascript in `.assets/js/main.js`.
+    ```
         Line 12 :
-        `breakpoints({
+        breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
 			large:    [ '981px',   '1280px' ],
 			medium:   [ '737px',   '980px'  ],
 			small:    [ '481px',   '736px'  ],
 			xsmall:   [ null,      '480px'  ]
-		});`
+		});
+    ```
 5. Any of the following were used: .map(), .reduce(), .filter(), .sort(), constructors were used to build new objedects.
     * In `./assets/js/about_us.js`, map is used to create new instances of an object. `Line 51 - const about_tabs = Array.from(about_us_tabs).map(node => new AboutTab(node));`
 6. A reusable component was built.  The component should be able to take any number of elements and continue to work well.  Example: Accordion with any amount of panels.
     * A Tab Component was built and can be reused. The Tab Component features a select method which will select other elments on the page with the same data attribute as its own.
 ## Project
+```
+
 root
 |
 |----index.html
@@ -62,4 +66,5 @@ root
 |       |----js (jquery and js)
 |
 |----images (various images used on the site)
+```
 
