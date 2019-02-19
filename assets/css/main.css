@@ -3814,6 +3814,11 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	#one {
+		background-color: black;
+		color: white;
+	}
+
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
@@ -3870,6 +3875,30 @@ input, select, textarea {
 	body.is-mobile #main > header {
 		background-attachment: scroll;
 	}
+/* Contact */
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	color: black;
+}
+
+#contact header {
+	text-align: center;
+}
+
+#contact form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#contact h2, #contact button {
+	color: black;
+	margin: 0 auto;
+}
+
 
 /* Footer */
 
