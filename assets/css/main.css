@@ -1853,7 +1853,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #ed4933;
 		}
 
 	select {
@@ -1945,7 +1945,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #ed4933;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2272,6 +2272,14 @@ input, select, textarea {
 
 /* Icons */
 
+	.icons li i {
+		font-size: 2.2em;
+	}
+
+	.icons li i:hover {
+		font-size: 2.2em;
+	}
+
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -2578,7 +2586,7 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #ed4933;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2791,7 +2799,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #ed4933;
 			color: #c8ece9;
 		}
 
@@ -2845,7 +2853,7 @@ input, select, textarea {
 
 				.wrapper.style1 select option {
 					color: #ffffff;
-					background: #21b2a6;
+					background: #ed4933;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
@@ -2861,7 +2869,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #21b2a6;
+				color: #ed4933;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -3984,7 +3992,7 @@ input, select, textarea {
 			}
 
 				#footer .icons a:hover {
-					color: #fff;
+					color: #ed4933;
 				}
 
 		#footer .copyright {
@@ -4014,8 +4022,8 @@ input, select, textarea {
 					color: inherit;
 				}
 
-					#footer .copyright li a:hover {
-						color: #fff;
+					#footer .copyright li:hover {
+						color: #ed4933;
 					}
 
 				@media screen and (max-width: 480px) {
