@@ -1853,7 +1853,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #ed4933;
 		}
 
 	select {
@@ -1945,7 +1945,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #ed4933;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2074,6 +2074,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 3px;
 			display: block;
+			max-height: 600px;
 		}
 
 		.image.left {
@@ -2270,6 +2271,14 @@ input, select, textarea {
 		}
 
 /* Icons */
+
+	.icons li i {
+		font-size: 2.2em;
+	}
+
+	.icons li i:hover {
+		font-size: 2.2em;
+	}
 
 	ul.icons {
 		cursor: default;
@@ -2577,7 +2586,7 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #ed4933;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2790,7 +2799,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #ed4933;
 			color: #c8ece9;
 		}
 
@@ -2844,7 +2853,7 @@ input, select, textarea {
 
 				.wrapper.style1 select option {
 					color: #ffffff;
-					background: #21b2a6;
+					background: #ed4933;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
@@ -2860,7 +2869,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #21b2a6;
+				color: #ed4933;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -3730,7 +3739,7 @@ input, select, textarea {
 #two > .major {
 	margin: 0;
 }
-#two .major h2 {
+#two .major h2{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -3738,6 +3747,58 @@ input, select, textarea {
 	text-align: center;
 	width: 25%;
 	margin: 0 auto;
+}
+
+
+#two .about-us-tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width:  50%;
+	margin: 0 auto;
+}
+
+#two .about-us-tabs span {
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4em;
+}
+
+#two .about-us-tabs span:hover {
+	background-color: white;
+	color: black;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.about-us-tab-selected {
+	background-color: #ed4933;
+	color: white;
+}
+.row i {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+}
+.row a {
+	border-bottom: none;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: center;
+	font-size: 1.2em;
+
+}
+
+.row a:hover {
+	background-color: #ed4933;
+	color: white;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 /* CTA */
 
@@ -3803,10 +3864,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/mountain.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/mountain.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/mountain.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3815,9 +3876,17 @@ input, select, textarea {
 	}
 
 	#one {
-		background-color: black;
-		color: white;
+		background-color: white;
+		color: black !important;
 	}
+
+		#one h2 {
+			color: black;
+		}
+
+		#one p {
+			color: black;
+		}
 
 		#main > header h2 {
 			font-size: 1.75em;
@@ -3899,6 +3968,12 @@ input, select, textarea {
 	margin: 0 auto;
 }
 
+#contact button:hover {
+	background-color: #ed4933;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	color: white;
+}
+
 
 /* Footer */
 
@@ -3917,7 +3992,7 @@ input, select, textarea {
 			}
 
 				#footer .icons a:hover {
-					color: #fff;
+					color: #ed4933;
 				}
 
 		#footer .copyright {
@@ -3947,8 +4022,8 @@ input, select, textarea {
 					color: inherit;
 				}
 
-					#footer .copyright li a:hover {
-						color: #fff;
+					#footer .copyright li:hover {
+						color: #ed4933;
 					}
 
 				@media screen and (max-width: 480px) {
@@ -3982,10 +4057,10 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image:  url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
+		background-image: url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -4003,10 +4078,10 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image:  url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
+		background-image: url("../../images/mountain.jpg");
+		background-image:  url("../../images/mountain.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
