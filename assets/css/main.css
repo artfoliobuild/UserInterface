@@ -3748,6 +3748,7 @@ input, select, textarea {
 	text-align: center;
 	width: 25%;
 	margin: 0 auto;
+	padding-top: 25px;
 }
 
 
@@ -3758,6 +3759,8 @@ input, select, textarea {
 	align-items: center;
 	width:  50%;
 	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #two .about-us-tabs span {
