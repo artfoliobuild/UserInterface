@@ -2074,7 +2074,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 3px;
 			display: block;
-			max-height: 600px;
+			max-height: 680px;
 		}
 
 		.image.left {
@@ -2665,6 +2665,7 @@ input, select, textarea {
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+				object-fit: cover;
 			}
 
 		.spotlight .content {
@@ -3747,6 +3748,7 @@ input, select, textarea {
 	text-align: center;
 	width: 25%;
 	margin: 0 auto;
+	padding-top: 25px;
 }
 
 
@@ -3757,6 +3759,8 @@ input, select, textarea {
 	align-items: center;
 	width:  50%;
 	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #two .about-us-tabs span {
