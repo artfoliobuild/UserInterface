@@ -3774,12 +3774,14 @@ input, select, textarea {
 	justify-content: center;
 	align-items: center;
 	font-size: 1.4em;
+	
 }
 
 #two .about-us-tabs span:hover {
 	background-color: white;
 	color: black;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	cursor: pointer;
 }
 
 .about-us-tab-selected {
@@ -3807,6 +3809,7 @@ input, select, textarea {
 	background-color: #ed4933;
 	color: white;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 736px) {
