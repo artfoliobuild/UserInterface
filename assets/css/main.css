@@ -2074,6 +2074,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 3px;
 			display: block;
+			max-height: 600px;
 		}
 
 		.image.left {
@@ -3730,7 +3731,7 @@ input, select, textarea {
 #two > .major {
 	margin: 0;
 }
-#two .major h2 {
+#two .major h2{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -3738,6 +3739,34 @@ input, select, textarea {
 	text-align: center;
 	width: 25%;
 	margin: 0 auto;
+}
+
+#two .about-us-tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width:  50%;
+	margin: 0 auto;
+}
+
+#two .about-us-tabs span {
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4em;
+}
+
+#two .about-us-tabs span:hover {
+	background-color: white;
+	color: black;
+}
+
+.about-us-tab-selected {
+	background-color: #ed4933;
+	color: white;
 }
 /* CTA */
 
