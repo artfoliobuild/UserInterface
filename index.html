@@ -185,11 +185,11 @@
                <header class="major">
                   <h2>Let's get in touch</h2>
                </header>
-               <form>
-                  <input type="text" placeholder="Name">
-                  <input type="email" placeholder="Email">
-                  <textarea placeholder="Message"></textarea>
-                  <button type="submit">Submit</button>
+               <form class="contact-form">
+                  <input class="name" type="text" placeholder="Name" required>
+                  <input class="email" type="email" placeholder="Email" required>
+                  <textarea placeholder="Message" required></textarea>
+                  <button type="submit" formmethod="post">Submit</button>
                </form>
             </div>
          </section>
@@ -213,6 +213,7 @@
       <script src="assets/js/browser.min.js"></script>
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/about_us.js"></script>
+      <script src="assets/js/message.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
    </body>
