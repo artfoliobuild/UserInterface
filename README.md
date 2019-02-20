@@ -2,7 +2,7 @@
 Artfolio Landing Page
 
 ## Deployment
-View the live project at https://zealous-colden-61bae8.netlify.com/
+View the live project at https://artfolio-landing.netlify.com/
 
 ## Team Members
 * Jeffrey Kang - SCRUM Master
@@ -67,4 +67,9 @@ root
 |
 |----images (various images used on the site)
 ```
+
+## Stretch
+Implemented a click event handler for the form button that gathers input field data, packages it in JSON, and sends it to our `messages` endpoint.
+`assets/js/message.js`
+
 
