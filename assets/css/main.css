@@ -3361,7 +3361,10 @@ input, select, textarea {
 			}
 
 			#menu ul > li:hover {
+				
 				background-color: #ed4933;
+				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
 			}
 
 				#menu ul > li:first-child {
