@@ -72,4 +72,8 @@ root
 Implemented a click event handler for the form button that gathers input field data, packages it in JSON, and sends it to our `messages` endpoint.
 `assets/js/message.js`
 
+## How to Run
+1. Download / clone project to your computer.
+2. Open the index.html file within a browser of your choice.
+
 
